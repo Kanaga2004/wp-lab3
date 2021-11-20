@@ -24,7 +24,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(session({
-    //secret: cookie_secret,
     secret: 'keyboard cat',
     resave: true,
     saveUninitialized: true
