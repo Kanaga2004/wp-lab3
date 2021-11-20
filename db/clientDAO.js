@@ -86,7 +86,7 @@ module.exports = {
     findByUsername,
     // findBySociety,
     findByNumclient,
-    // createClient,
+    createClient,
     // deleteClient,
     // createInitialAccounts
 };
