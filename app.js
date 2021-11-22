@@ -23,11 +23,13 @@ app.get("/contacts", (req, res) => {
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use(session({
-    secret: 'keyboard cat',
+app.use(
+  session({
+    secret: "keyboard cat",
     resave: true,
-    saveUninitialized: true
-}));
+    saveUninitialized: true,
+  })
+);
 
 app.get("/login", (req, res) => {
   res.render("login");
